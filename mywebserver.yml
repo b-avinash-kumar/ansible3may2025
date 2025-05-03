@@ -1,0 +1,8 @@
+--- 
+- hosts: all 
+  become: yes 
+  tasks:
+  - name: task to install apache2 web server on node
+    apt:
+      name: apache2 
+      state: present 
